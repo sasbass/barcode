@@ -58,7 +58,7 @@ class Index extends MY_Controller {
 		$this->load->view($this->data["view"],$this->data);
 	}
 
-	function barcode($array_barcodes) {
+	private function barcode($array_barcodes) {
 		$files = array();
 		foreach ($array_barcodes as $key => $value) {
 			$path = 'public/img/barcode/';
